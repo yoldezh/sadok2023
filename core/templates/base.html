@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block  title %} social network {% endblock %}</title>
+    <!-- Autres éléments de la balise head, tels que les feuilles de style CSS et les scripts -->
+</head>
+<body>
+    <header>
+        <!-- Barre de navigation, logo, ou tout autre élément d'en-tête que vous souhaitez afficher -->
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/about/">À propos</a></li>
+                <!-- Autres liens de navigation -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock  content %}

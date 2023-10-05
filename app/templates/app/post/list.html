@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <h1>Post List</h1>
+{% endblock %}
+
+{% block content %}
+<a href="{% url 'create.html' %}">Add Post</a>
+
+{% if messages %}
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+{% endif %}
+
+<h1>Post List</h1>
+
+{% for post in posts %}
+        <h2>{{ post.content }}</h2>
+
+{% endfor %}
+
+{% endblock %}          
