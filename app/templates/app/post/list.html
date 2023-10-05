@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}
     <h1>Post List</h1>
 {% endblock %}
@@ -17,6 +19,7 @@
 
 {% for post in posts %}
         <h2>{{ post.content }}</h2>
+        <img src="{% static post.image %}">
 
 {% endfor %}
 
