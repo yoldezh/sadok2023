@@ -52,11 +52,9 @@ def post_list(request):
     else:
      form = PostForm()
     posts = Post.objects.all()
-    post_media= Media.objects.all()
 
     context['posts'] = posts
     context['form'] = form
-    context['media.image'] = post_media 
 
 
     return render(request, template_name, context)
